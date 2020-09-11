@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="pickerLayout"/>
+    <item type="id" name="languagesSpinner"/>
+    <item type="id" name="indicator"/>
+</resources>

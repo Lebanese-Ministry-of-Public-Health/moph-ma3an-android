@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "57559669943",
+    "firebase_url": "https://moph-tracer.firebaseio.com",
+    "project_id": "moph-tracer",
+    "storage_bucket": "moph-tracer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57559669943:android:a5ff0fc0132f160a200132",
+        "android_client_info": {
+          "package_name": "com.tedmob.moph.tracer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57559669943-22jcdaosatqdbro4l85sdgbia6g127d3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tedmob.moph.tracer",
+            "certificate_hash": "9159424dfa21a3409c372c069c08792702cebfe9"
+          }
+        },
+        {
+          "client_id": "57559669943-43prhige055jp97och70ks2i5ctu3smb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tedmob.moph.tracer",
+            "certificate_hash": "bffdefdfadc1fc8fa0913fa39b24f449a6375791"
+          }
+        },
+        {
+          "client_id": "57559669943-mj2jnnvgsb8rs13f3o1g4nd1mea2qvoj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0r4zPb2KFgpt4JiMibNMBaIUAXqPM_Kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57559669943-mj2jnnvgsb8rs13f3o1g4nd1mea2qvoj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "57559669943-5435nne6i71t6al94voqcpdfdj42fe2j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.moph.salamati"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

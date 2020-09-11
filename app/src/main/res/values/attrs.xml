@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinView">
+        <attr name="digitBackground" format="reference" />
+        <attr name="digitTextColor" format="color" />
+        <attr name="digitTextSize" format="dimension" />
+        <attr name="digitNbr" format="integer" />
+        <attr name="isAlphaNumerical" format="boolean" />
+    </declare-styleable>
+</resources>

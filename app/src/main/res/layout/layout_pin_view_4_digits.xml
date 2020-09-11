@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/pinViewEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:cursorVisible="false"
+        android:focusable="true"
+        android:inputType="number"
+        android:maxLength="16"
+        android:textColor="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pinDigit1"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pin_text"
+        android:gravity="center"
+        android:maxLength="4"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="w,"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pinDigit2"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/pin_text"
+        android:gravity="center"
+        android:maxLength="4"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="w,"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pinDigit3"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/pin_text"
+        android:gravity="center"
+        android:maxLength="4"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="w,"
+        app:layout_constraintEnd_toStartOf="@+id/pinDigit4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pinDigit4"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/pin_text"
+        android:gravity="center"
+        android:maxLength="4"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="w,"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pinDigit3"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

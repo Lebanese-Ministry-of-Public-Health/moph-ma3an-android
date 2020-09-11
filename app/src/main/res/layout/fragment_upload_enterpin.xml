@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white_radius">
+
+        <ImageButton
+            android:id="@+id/enterPinFragmentBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="?selectableItemBackground"
+            android:src="@mipmap/ic_nav_back_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tedmob.moph.tracer.ui.LayoutWrapHeightViewPager
+            android:id="@+id/layoutVP1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tedmob.moph.tracer.ui.PinView
+            android:id="@+id/enterPinFragmentUploadCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:isAlphaNumerical="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutVP1" />
+
+        <TextView
+            android:id="@+id/enterPinFragmentErrorMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/invalid_pin"
+            android:textColor="@color/redError"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/enterPinFragmentUploadCode"
+            app:layout_constraintStart_toStartOf="@+id/enterPinFragmentUploadCode"
+            app:layout_constraintTop_toBottomOf="@+id/enterPinFragmentUploadCode" />
+
+        <com.tedmob.moph.tracer.ui.LayoutWrapHeightViewPager
+            android:id="@+id/layoutVP2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enterPinFragmentErrorMessage" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/enterPinActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/upload_data"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutVP2"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
