@@ -23,14 +23,26 @@ class PreOnboardingActivity : FragmentActivity() {
                 Preference.setPreferredLanguage(this, it)
 
                 when (Preference.getPreferredLanguage(this)) {
-                    0 -> next.setText(R.string.agree_ar)
-                    1 -> next.setText(R.string.agree)
+                    0 -> {
+                        next.setText(R.string.agree_ar)
+                        header0En.setText(R.string.consent_1_header_0_ar)
+                    }
+                    1 -> {
+                        next.setText(R.string.agree)
+                        header0En.setText(R.string.consent_1_header_0_en)
+                    }
                 }
             }
 
             when (Preference.getPreferredLanguage(this)) {
-                0 -> next.setText(R.string.agree_ar)
-                1 -> next.setText(R.string.agree)
+                0 -> {
+                    next.setText(R.string.agree_ar)
+                    header0En.setText(R.string.consent_1_header_0_ar)
+                }
+                1 -> {
+                    next.setText(R.string.agree)
+                    header0En.setText(R.string.consent_1_header_0_en)
+                }
             }
         }
     }

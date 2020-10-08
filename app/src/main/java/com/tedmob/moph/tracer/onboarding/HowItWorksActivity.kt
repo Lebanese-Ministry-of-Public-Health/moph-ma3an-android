@@ -24,14 +24,26 @@ class HowItWorksActivity : FragmentActivity() {
                 Preference.setPreferredLanguage(this, it)
 
                 when (it) {
-                    0 -> next.setText(R.string.next_ar)
-                    1 -> next.setText(R.string.next)
+                    0 -> {
+                        next.setText(R.string.next_ar)
+                        header0En.setText(R.string.consent_1_header_0_ar)
+                    }
+                    1 -> {
+                        next.setText(R.string.next)
+                        header0En.setText(R.string.consent_1_header_0_en)
+                    }
                 }
             }
 
             when (Preference.getPreferredLanguage(this)) {
-                0 -> next.setText(R.string.next_ar)
-                1 -> next.setText(R.string.next)
+                0 -> {
+                    next.setText(R.string.next_ar)
+                    header0En.setText(R.string.consent_1_header_0_ar)
+                }
+                1 -> {
+                    next.setText(R.string.next)
+                    header0En.setText(R.string.consent_1_header_0_en)
+                }
             }
         }
     }
