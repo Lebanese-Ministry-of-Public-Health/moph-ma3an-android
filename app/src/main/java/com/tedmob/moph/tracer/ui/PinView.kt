@@ -17,6 +17,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.tedmob.moph.tracer.R
 import kotlinx.android.synthetic.main.layout_pin_view.view.*
+import java.util.*
 
 class PinView
 @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyle: Int = 0) :
@@ -40,12 +41,12 @@ class PinView
 
         View.inflate(getContext(), R.layout.layout_pin_view, this)
 
-        digits.add(pinDigit1)
-        digits.add(pinDigit2)
-        digits.add(pinDigit3)
-        digits.add(pinDigit4)
-        digits.add(pinDigit5)
-        digits.add(pinDigit6)
+        digits.add(pinDigit1.apply { textLocale = Locale.ENGLISH })
+        digits.add(pinDigit2.apply { textLocale = Locale.ENGLISH })
+        digits.add(pinDigit3.apply { textLocale = Locale.ENGLISH })
+        digits.add(pinDigit4.apply { textLocale = Locale.ENGLISH })
+        digits.add(pinDigit5.apply { textLocale = Locale.ENGLISH })
+        digits.add(pinDigit6.apply { textLocale = Locale.ENGLISH })
 
         if (attrs != null) {
             val a = context.obtainStyledAttributes(attrs, R.styleable.PinView, defStyle, 0)
@@ -67,6 +68,7 @@ class PinView
                 pinViewEditText.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_NORMAL
             }
 
+            pinViewEditText.textLocale = Locale.ENGLISH
             pinViewEditText.filters = arrayOf(InputFilter.LengthFilter(digits.size * digitNbr))
             pinViewEditText.addTextChangedListener(this)
             pinViewEditText.setOnEditorActionListener(this)
