@@ -24,7 +24,7 @@ apply plugin: 'com.jaredsburrows.license'
 
 ext.versionMajor = 1
 ext.versionMinor = 0
-ext.versionPatch = 3
+ext.versionPatch = 4
 
 android {
     compileSdkVersion 29
