@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.google.firebase:firebase-appdistribution-gradle:2.0.1'//fixme why is this needed here?
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:2.0.1'
         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
     }
 }
@@ -24,7 +24,7 @@ apply plugin: 'com.jaredsburrows.license'
 
 ext.versionMajor = 1
 ext.versionMinor = 0
-ext.versionPatch = 4
+ext.versionPatch = 5
 
 android {
     compileSdkVersion 29
